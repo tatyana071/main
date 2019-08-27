@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>load form</title>
+    <style media="screen">
+    div{
+      box-sizing:
+    }
+      body{
+        font-family: sans-serif;
+      }
+
+      .mainform{
+        display: flex;
+        width: 600px;
+        height: 100px;
+        margin: auto;
+        padding: 20px;
+        box-shadow: 0 0 5px 0 #999;
+      }
+      .load{
+        width: 30%;
+        height: 100%-25px;
+        background: #999;
+        text-align: center;
+        padding-top: 25px;
+      }
+      .info{
+        width: 70%;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap:wrap;
+      }
+      .progress{
+        width: 70%;
+        height: 20px;
+
+        text-align: right;
+        background: #fff;
+        border: solid 1px #009;
+
+      }
+      .progress span{
+        font-size: 9px;
+        padding: 10px;
+      }
+      .progress::before{
+        content: "UPLOADING 40%";
+        width: 40%;
+        height: 17px;
+        padding-top: 3px;
+        background: #ccf;
+        font-size: 12px;
+        text-align:center;
+        float: left;
+      }
+      .button{
+        width: 23%;
+        height: 19px;
+        margin-left: 20px;
+        background: #009;
+        color: #fff;
+        text-align: center;
+        padding-top: 3px;
+        font-weight: bold;
+      }
+      .text{
+        line-height: 1;
+      }
+      h2, p{
+        margin:10px;
+        margin-left: 0;
+      }
+      @media (max-width: 600px){
+        .mainform{
+          width: 90%;
+          height: auto;
+          flex-direction: column;
+        }
+        .load{
+          box-sizing: border-box;
+          width: 100%;
+          height: auto;
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+        .info{
+          width: 100%;
+          margin: 0;
+          flex-direction: column;
+        }
+        .progress, .button, .text{
+          width: 100%;
+          margin: 0;
+          margin-bottom: 20px;
+        }
+        .button{
+          order: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainform">
+      <div class="load">
+        <i class="fas fa-sync fa-spin fa-3x"></i>
+      </div>
+      <div class="info">
+        <div class="progress">
+          <span>About 23 minutes remaining</span>
+        </div>
+        <div class="button">
+          DONE
+        </div>
+        <div class="text">
+          <h2>Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</p>
+        </div>
+      </div>
+    </div>
+  <script src="https://kit.fontawesome.com/5f0fbdf9c8.js"></script>
+  </body>
+</html>
