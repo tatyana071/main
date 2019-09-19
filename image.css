@@ -1,0 +1,38 @@
+.container {
+  margin: 20px auto;
+  width: 400px;
+  height: 193px;
+  background: #B2E9F1;
+  padding-top: 30px;
+}
+
+.first {
+  margin: auto;
+  position: relative;
+  background: #fff;
+  width: 100px;
+  height: 60px;
+  transform: skewx(-41deg);
+  z-index: 100;
+
+}
+.second {
+  margin: 0 auto;
+  position: relative;
+  width: 100px;
+  height: 60px;
+  transform: skewx(-41deg);
+  background: #15DDE8;
+  margin-top: -20px;
+  z-index: 50;
+}
+.third {
+  margin: 0 auto;
+  position: relative;
+  width: 100px;
+  height: 60px;
+  transform: skewx(-41deg);
+  background: #024ADA;
+  z-index: 1;
+  margin-top: -20px;
+}
